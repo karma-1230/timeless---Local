@@ -1,0 +1,59 @@
+/* Top black bar */
+.topBar {
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* White logo bar */
+.logoSection {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.brand {
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Main navbar */
+.mainNavbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Center links + style */
+.navLinks {
+    text-align: center;
+}
+
+.link {
+    color: #000 !important;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #666 !important;
+}
+
+/* Hamburger button fix */
+.navbarToggler {
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 1rem;
+    /* places it on left side */
+    top: 0.75rem;
+}
+
+/* Optional: Adjust for small screens */
+@media (max-width: 768px) {
+    .navbarToggler {
+        left: 15px;
+    }
+}

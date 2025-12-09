@@ -1,0 +1,149 @@
+.page {
+    background-color: #0a0a0a;
+    min-height: 100vh;
+    color: #e0e0e0;
+    font-family: 'Cinzel', serif;
+}
+
+.main {
+    padding: 90px 40px 60px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 1.9rem;
+    color: #c41e3a;
+    letter-spacing: 1px;
+}
+
+.filters {
+    display: flex;
+    gap: 15px;
+}
+
+.dropdown,
+.search {
+    background: #1a1a1a;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    padding: 10px 14px;
+    border-radius: 4px;
+}
+
+.search::placeholder {
+    color: #777;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(196, 30, 58, 0.4);
+}
+
+.image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 15px;
+}
+
+.info h3 {
+    margin: 0;
+    color: #eaeaea;
+    font-size: 1.1rem;
+}
+
+.category {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.price {
+    color: #c41e3a;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.stock {
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.in {
+    color: #00c853;
+}
+
+.low {
+    color: #ffd600;
+}
+
+.out {
+    color: #ff3d00;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 15px;
+    gap: 10px;
+}
+
+.edit,
+.delete {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit {
+    background-color: #c41e3a;
+    color: #fff;
+}
+
+.edit:hover {
+    background-color: #a0182f;
+}
+
+.delete {
+    background-color: #333;
+    color: #c41e3a;
+    border: 1px solid #c41e3a;
+}
+
+.delete:hover {
+    background-color: #1a1a1a;
+}
+
+.noItems {
+    text-align: center;
+    color: #777;
+    margin-top: 50px;
+}

@@ -1,0 +1,110 @@
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #f5f6fa;
+    padding: 60px 80px;
+    border-radius: 12px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.imageSection {
+    flex: 1;
+    min-width: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.imageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.formSection {
+    flex: 1.2;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.formSection h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.formSection p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nameRow {
+    display: flex;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.95rem;
+    transition: border 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: black;
+    outline: none;
+}
+
+.submitBtn {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.submitBtn:hover {
+    background-color: #333;
+}
+
+.footerText {
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.footerText a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .contactContainer {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .formSection {
+        padding: 30px;
+    }
+}

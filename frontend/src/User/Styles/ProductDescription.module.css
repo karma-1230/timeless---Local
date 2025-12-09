@@ -1,0 +1,152 @@
+.productPage {
+    display: flex;
+    justify-content: center;
+    padding: 100px 80px 80px 80px;
+    gap: 60px;
+    background-color: #fff;
+    color: #000;
+    font-family: "Arial", sans-serif;
+}
+
+.leftColumn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.imageWrapper {
+    width: 400px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.productImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.rightColumn {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.category {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.price {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.originalPrice {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 1rem;
+}
+
+.salePrice {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ratingSection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.currentRating {
+    margin-bottom: 8px;
+}
+
+.userRating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filledStar {
+    color: #000;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.emptyStar {
+    color: #ccc;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.submitRatingBtn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.quantitySelector {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    justify-content: space-between;
+    padding: 0 16px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.quantitySelector button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quantitySelector span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.addCartButton {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.descriptionSection {
+    font-size: 1rem;
+    line-height: 1.5;
+}

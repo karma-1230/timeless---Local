@@ -1,0 +1,126 @@
+.wrapper {
+    padding: 50px 80px;
+    background-color: #f5f6fa;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    color: #1f1f1f;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #4a4a4a;
+    max-width: 600px;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: white;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.soldOut {
+    background-color: #999;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.info h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 0.9rem;
+    color: #222;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+}

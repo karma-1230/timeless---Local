@@ -1,0 +1,72 @@
+.productsSection {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.sectionTitle {
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.sectionSubtitle {
+    color: #666;
+}
+
+.productCard {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Image section */
+.imageWrapper {
+    position: relative;
+}
+
+.productImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.discountBadge {
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+}
+
+/* Text & prices */
+.productName {
+    color: #000;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.ratingStars {
+    color: #ffc107;
+    font-size: 1rem;
+}
+
+.originalPrice {
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+.salePrice {
+    color: #000;
+}
+
+/* Button */
+.chooseButton {
+    transition: all 0.3s ease;
+}
+
+.chooseButton:hover {
+    background-color: #000;
+    color: #fff;
+}

@@ -1,0 +1,50 @@
+.heroSection {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+.heroRow {
+    height: 100%;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.centerContent {
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.button {
+    border: 2px solid white;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.mobileContainer {
+    position: relative;
+}
+
+.mobileImage {
+    object-fit: cover;
+}
+
+.mobileContent {
+    text-align: center;
+}
+
+.mobileTitle {
+    font-weight: bold;
+    font-size: 2.5rem;
+}

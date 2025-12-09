@@ -1,0 +1,219 @@
+/* Container */
+.profilePage {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f5f6fa;
+    min-height: 100vh;
+}
+
+/* Card Layout */
+.profileCard {
+    display: flex;
+    gap: 50px;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    padding: 40px;
+    transition: transform 0.2s ease;
+}
+
+.profileCard:hover {
+    transform: translateY(-3px);
+}
+
+/* Columns */
+.leftColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.rightColumn {
+    flex: 2;
+}
+
+/* Profile Picture */
+.profilePicWrapper {
+    position: relative;
+}
+
+.profilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.profilePicWrapper:hover .profilePic {
+    transform: scale(1.05);
+}
+
+/* Camera overlay */
+.changePicBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+}
+
+.changePicBtn:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Delete Button */
+.deleteBtn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Info Section */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.infoForm,
+.infoDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form rows */
+.formRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.formRow label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.formRow input {
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.formRow input:focus {
+    border-color: black;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.75rem;
+    margin-top: 3px;
+}
+
+/* Display rows */
+.displayRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.displayRow .label {
+    font-weight: 500;
+}
+
+/* Buttons */
+.buttonRow {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.editBtn,
+.saveBtn,
+.cancelBtn {
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.editBtn,
+.saveBtn {
+    background-color: black;
+    color: white;
+}
+
+.cancelBtn {
+    background-color: #ddd;
+    color: #333;
+}
+
+.editBtn:hover,
+.saveBtn:hover,
+.cancelBtn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .profileCard {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+    }
+
+    .leftColumn {
+        width: 100%;
+    }
+
+    .rightColumn {
+        width: 100%;
+    }
+
+    .displayRow {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 6px 0;
+    }
+
+    .buttonRow {
+        flex-direction: column;
+    }
+}
